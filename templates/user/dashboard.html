@@ -1,0 +1,7 @@
+{% extends 'layout.html' %}
+
+
+{% block body %}
+  <h2>Your dashboard</h2>
+  <h3>Welcome {{session['username']}}</h3><span><a href="/logout">Sign Out</a></span>
+{% endblock %}

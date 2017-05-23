@@ -1,0 +1,9 @@
+{% extends 'layout.html' %}
+
+
+{% block body %}
+  <h1>All Articles</h1>
+  {% for article in articles %}
+    <p><a href="articles/{{article.id}}"> {{ article.title }}</a></p>
+  {% endfor %}
+{% endblock %}

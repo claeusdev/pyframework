@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My blog</title>
+    <link rel="stylesheet" href="../static/css/bootstrap.css">
+    <link rel="stylesheet" href="../static/css/album.css">
+
+  </head>
+  <body>
+    {% include 'partials/_header.html' %}
+      <div class="container">
+        {% include 'partials/_flashMessages.html' %}
+        {% block body %}{% endblock %}
+      </div>
+      <hr>
+    {% include 'partials/_footer.html' %}
+    <script src="../static/js/jquery.min.js"></script>
+    <script src="../static/js/tether.js"></script>
+    <script src="../static/js/holder.js"></script>
+    <script src="../static/js/bootstrap.js"></script>
+  </body>
+</html>
